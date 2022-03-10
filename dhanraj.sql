@@ -156,4 +156,54 @@ insert into emp2(no,name,job,sal,deptno)
         values( 61,'pranali','frontend developer',75000,12);  
         select * from emp2;
         delete from emp2 where no='23';
+        select job,sal,12*sal
+        from emp2;
+        select job,sal,12*sal+100
+        from emp2;
+        select job ,sal,12*(sal+100)
+        from emp2;
+        desc emp2;
+        insert into emp2(no,name,job,sal,deptno)
+        values( 61,'pranali','frontend developer',null,12);
         
+        select name ,sal,deptno,12*sal*deptno
+        from emp2;
+        select sal,no,name,job as salary
+          from emp2;
+          select sal "salary"
+          from emp2;
+          select * from emp2;
+          select * from emp2;
+          select name || job as "sala"
+          from emp2;
+          select  name || ' is  a ' ||job as "sal"
+          from emp2;
+    create table food (id int,name varchar2(30),rest_name varchar2(20),price int,loc varchar2(30),rating varchar2(20));
+    insert into food
+       values(101,'BIRYANI','HAYATT',300,'VIMANNAGAR','5 STAR');
+  insert into food
+       values(102,'FRIED RICE','ROYAL HOTEL',300,'WAGHOLI','4 STAR'); 
+insert into food
+       values(103,'BURGER','MACDONALS',300,'VIMANNAGAR','5 STAR');
+insert into food
+       values(104,'PANNER KOHAPURI ', 'PRIDE HOTEL',300,'SHIVAJINAGAR','4 STAR');
+ insert into food
+       values(105,'PIZZA','DOMINO',200,'FC FROAD','5 STAR');
+ insert into food
+       values(106,'CHICKEN ROOL','MUMMYS KICHEN',15000,'KARVE NAGAR','5 STAR'); 
+ insert into food
+       values(107,'GRILD SANDWICH','GRILD HOUSE',150,'WADGAON','5 STAR'); 
+ insert into food
+       values(108,'COFFIE','CCD',400,'SWARGATE','5 STAR');
+ insert into food
+       values(109,'BADAM SHAKE','FRUIT SHOP',80,'HADAPSAR','5 STAR');
+insert into food
+       values(110,'PIZZA','CRAZY CHEESE',250,'VIMANNAGAR','5 STAR');  
+       SELECT * FROM FOOD;
+  SELECT * FROM FOOD 
+           WHERE PRICE BETWEEN 100 AND 400;
+SELECT * FROM FOOD
+           WHERE PRICE  IN(150,250);
+SELECT * FROM FOOD
+         WHERE NAME LIKE 'V'
+          
